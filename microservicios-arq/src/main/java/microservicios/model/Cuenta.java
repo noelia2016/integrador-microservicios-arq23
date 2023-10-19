@@ -11,6 +11,9 @@ public class Cuenta {
     private String nro_cuenta;
 
     @Column
+    private Date fecha_alta;
+
+    @Column
     private Integer saldo;
 
     /** detalle del saldo va calculado a medida que se carga saldo */

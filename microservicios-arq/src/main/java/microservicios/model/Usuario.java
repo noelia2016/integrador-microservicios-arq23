@@ -10,6 +10,12 @@ public class Usuario {
 
    	@Column
 	private String nombre;
+
+	@Column
+	private String celular;
+
+	@Column
+	private String email;
 			
 	public Usuario() {
 		super();
