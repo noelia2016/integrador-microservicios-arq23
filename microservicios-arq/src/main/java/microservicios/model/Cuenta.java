@@ -16,6 +16,12 @@ public class Cuenta {
     @Column
     private Integer saldo;
 
+    /**
+     * La puede deshabilitar el encargado de mantenimiento
+     */
+    @Column
+    private Boolean habilitada;
+
     /** detalle del saldo va calculado a medida que se carga saldo */
             
     public Cuenta() {

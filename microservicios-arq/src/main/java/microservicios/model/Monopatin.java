@@ -4,19 +4,26 @@ public class Monopatin {
     
     @Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id_producto;
+	private Integer id_monopatin;
 
-   	@Column
-	private String nombre;
+	/** 
+	 * Marca si esta habilitado para su uso, esta ocuapdo o en mantenimiento
+	 */
+    @Column
+	private String estado;
 
     @Column
-	private String descripcion;
+	private String ubicacion;
 
-    @Column
-	private Double precio;
+	@Column
+	private Integer kmDeRodaje;
 
-    @Column
-	private Integer stock;
+	@Column
+	private Integer tiempoUsado;
+
+	/** el tiempo de uso y la cant de kilometros es calculado recorriendo los viajes asociados
+	 * que tiene el monopatin
+	 */
 			
 	public Monopatin() {
 		super();

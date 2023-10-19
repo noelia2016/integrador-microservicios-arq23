@@ -16,6 +16,12 @@ public class Usuario {
 
 	@Column
 	private String email;
+
+	/*
+	 * Cuenta asociada a debitar cuando el usuario usa el monopatin
+	 */
+	@Column
+	private Integer cuenta_asociada;
 			
 	public Usuario() {
 		super();
