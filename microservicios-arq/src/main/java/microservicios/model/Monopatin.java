@@ -1,6 +1,6 @@
 package microservicios.model;
 
-public class Producto {
+public class Monopatin {
     
     @Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -18,11 +18,11 @@ public class Producto {
     @Column
 	private Integer stock;
 			
-	public Producto() {
+	public Monopatin() {
 		super();
 	}
 
-    public Producto(String nombre, String descripcion, Double precio, Integer cant) {
+    public Monopatin(String nombre, String descripcion, Double precio, Integer cant) {
 		this.nombre = nombre;
         this.descripcion = descripcion;
         this.precio = precio;

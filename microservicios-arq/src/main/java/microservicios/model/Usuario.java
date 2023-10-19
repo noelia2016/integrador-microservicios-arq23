@@ -2,20 +2,20 @@ package microservicios.model;
 
 import java.util.List;
 
-public class Cliente {
+public class Usuario {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Integer id_cliente;
+	private Integer id_user;
 
    	@Column
 	private String nombre;
 			
-	public Cliente() {
+	public Usuario() {
 		super();
 	}
 
-    public Cliente(String nombre) {
+    public Usuario(String nombre) {
 		this.nombre = nombre;
 
 	}

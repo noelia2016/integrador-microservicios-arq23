@@ -1,6 +1,6 @@
 package microservicios.model;
 
-public class Compra {
+public class AlquilerMonopatin {
     
     @Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -9,11 +9,11 @@ public class Compra {
    	@Column
 	private Date fecha_compra;
 			
-	public Compra() {
+	public AlquilerMonopatin() {
 		super();
 	}
 
-    public Compra(Date fecha) {
+    public AlquilerMonopatin(Date fecha) {
 		this.fecha_compra = fecha;
 
 	}
